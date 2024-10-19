@@ -146,12 +146,12 @@ export default function App() {
     }
   }, [offset, numberMatched]);
 
-  const memoizedMapData = useMemo(() => mapData, [mapData]);
+  const MapData = useMemo(() => mapData, [mapData]);
 
   return (
     <View style={styles.page}>
       <MapViewWrapper
-        mapData={memoizedMapData}
+        mapData={MapData}
         center={center}
         zoomLevel={zoomLevel}
         onRegionDidChange={onRegionDidChange}
