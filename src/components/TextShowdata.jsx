@@ -2,7 +2,7 @@ import React from 'react';
 import {StyleSheet, View} from 'react-native';
 import {Card, Text} from 'react-native-elements';
 
-function TextShodata() {
+function TextShowdata() {
   return (
     <>
       <Card containerStyle={styles.container}>
@@ -81,4 +81,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default TextShodata;
+export default TextShowdata;

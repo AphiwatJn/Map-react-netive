@@ -2,7 +2,7 @@ import React, { useCallback } from 'react';
 import { View, StyleSheet } from 'react-native';
 import { Button, Icon } from 'react-native-elements';
 
-function ZoomAction({ setZoomLevel, setCenter, location, hasPermission }) {
+const ZoomAction = React.memo(({ setZoomLevel, setCenter, location, hasPermission }) => {
   const PressLocation = useCallback(() => {
     setZoomLevel(8);
     setCenter(location);
@@ -58,7 +58,7 @@ function ZoomAction({ setZoomLevel, setCenter, location, hasPermission }) {
       )}
     </View>
   );
-}
+});
 
 const styles = StyleSheet.create({
   container: {

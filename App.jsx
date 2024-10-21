@@ -9,7 +9,7 @@ import {
 import MapLibreGL from '@maplibre/maplibre-react-native';
 import axios from 'axios';
 import ZoomAction from './src/components/ZoomAction';
-import TextShodata from './src/components/TextShodata';
+import TextShowdata from './src/components/TextShowdata';
 import LoadingText from './src/components/LoadingText';
 import MapViewWrapper from './src/components/MapviewWrapper';
 
@@ -135,8 +135,6 @@ export default function App() {
   useEffect(() => {
     console.log("fetchNumberMatched");
     fetchNumberMatched();
-
-    
   }, []);
 
   useEffect(() => {
@@ -157,7 +155,7 @@ export default function App() {
         onRegionDidChange={onRegionDidChange}
         UserLocation={UserLocation}
       />
-      <TextShodata numberMatched={numberMatched} totalFetched={totalFetched} />
+      <TextShowdata numberMatched={numberMatched} totalFetched={totalFetched} />
       <ZoomAction
         setZoomLevel={setZoomLevel}
         setCenter={setCenter}
